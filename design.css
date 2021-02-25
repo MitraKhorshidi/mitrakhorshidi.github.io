@@ -1,0 +1,18 @@
+/* *{
+   text-align: center; 
+} */
+body{
+    background-image: url('../Mixed Wallpapers.jpg');
+}
+h1.heading{
+    color: white;
+}
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(74, 62, 150,0.5);
+    color:whitesmoke;
+}
+form{
+    border:2px solid mediumslateblue;
+    
+}

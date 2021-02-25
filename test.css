@@ -1,0 +1,44 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    background-image: url('../023.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+        h1{
+            color: chocolate;
+            font-weight: bold;
+            border-radius: 5%;
+            border:solid maroon;
+        }
+        a:link{
+            color: lawngreen;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover ,a:active{
+            color: orange;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:visited{
+            color: pink;
+            background-color: transparent;
+            text-decoration: underlined;
+        }
+        #p1{
+            background-color: purple;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        #p2{
+            background-color: seagreen;
+            width: 100px;
+            height: 100px;
+        }
