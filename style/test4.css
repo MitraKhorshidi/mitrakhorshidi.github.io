@@ -244,7 +244,7 @@ select:focus{
     100%{background-color: orangered;}
 }
 .transition1{
-    background-color: aqua;
+    background-color: rgb(98, 219, 219);
     width: 100px;
     height: 100px;
     transition: width 2s, height 2s ,transform 2s;
