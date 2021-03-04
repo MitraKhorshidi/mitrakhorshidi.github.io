@@ -63,6 +63,32 @@ li.dropdown3{
     color: white;
     border-bottom: 1px solid rgb(83, 82, 82);
 }
+.animation{
+    background-color: rgb(167, 54, 54);
+    width: 100px;
+    height: 50px;
+    position: relative;
+    margin: 20px;
+    animation-name: test2;
+    animation-duration: 3s;
+    animation-delay: -0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+.animation p{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-family: fantasy;
+    font-size: 30px;
+}
+@keyframes test2{
+    0%{background-color: rgb(167, 54, 54); left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 400px; top: 0px;}
+    50%{background-color: blue; left: 800px; top: 0px;}
+    75%{background-color: green; left: 1000px; top: 0px;}
+    100%{background-color: orchid; left: 1200px; top: 0px;}
+}
 .clearfix ::after{
     content: "";
     clear: both;
@@ -95,6 +121,7 @@ div.gallery img{
     float: left;
     padding: 10px;
     width: 33%;
+    height: auto;
 }
 .dropdown1{
     padding: 5px 0px;
@@ -178,9 +205,64 @@ select:focus{
       width: 100%;
     }
   } */
+.sh{
+    text-shadow: 2px 2px 5px royalblue;
+}
+.sha{
+    text-shadow: 0px 0px 3px darkslateblue;
+}
+.flexbox{
+    display: flex;
+}
+.flexbox > div{
+    margin: 10px;
+    padding: 20px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.boxsh{
+    background-color: gold;
+    padding: 10px 20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 10px 10px 5px #333333;
+}
+/* @keyframes test1{
+    from{background-color: aqua;}
+    to{background-color: coral;}
+} */
+@keyframes test1{
+    0%{background-color: aqua;}
+    25%{background-color: coral;}
+    50%{background-color: crimson;}
+    75%{background-color: forestgreen;}
+    100%{background-color: orangered;}
+}
+.transition1{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s ,transform 2s;
+    transition-timing-function: ease-out;
+    animation-name: test1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    align-self: center;
+}
+.transition1:hover{
+    width: 200px;
+    height: 200px;
+    transform: rotate(90deg);
+}
 .footer{
     background-color: #111111;
     padding: 10px;
+    margin: 60px 0px 0px 0px;
     text-align: left;
     color: white;
 }
