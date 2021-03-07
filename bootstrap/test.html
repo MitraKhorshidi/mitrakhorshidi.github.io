@@ -3,9 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Mitra</title>
 </head>
 <body>
-    <p>hello</p>
+    <div class="container p-3 my-3 border">
+        <h1>Mitra first bootstrap website</h1>
+        <p>this is some text</p>
+        <footer class="blockquote-footer">From WWW. company</footer>
+    </div>
+    <div class="container p-3 my-3 bg-dark text-white">
+        <h1>Mitra first bootstrap website</h1>
+        <p>this is some text</p>
+    </div>
+    <div class="container p-3 my-3 bg-primary text-white">
+        <h1>Mitra first bootstrap website</h1>
+        <p>this is some text</p>
+    </div>
+    <div class="container-fluid">
+        <p>this is a text</p>
+        <div class="row">
+            <div class="col" style="background-color:cadetblue">col</div>
+            <div class="col" style="background-color: chocolate;">col</div>
+            <div class="col" style="background-color: cadetblue;">col</div>
+            <div class="col" style="background-color:chocolate">col</div>
+            <div class="col" style="background-color: cadetblue;">col</div>
+            <div class="col" style="background-color: chocolate;">col</div>
+        </div>
+        <h1 class="display-1">h1 display 1</h1>
+        <h1 class="display-2">h1 display 2</h1>
+        <h1 class="display-3">h1 display 3</h1>
+        <h1 class="display-4">h1 display 4</h1>
+        <h1>heading 1<small>secondary small text</small></h1>
+        <h2>heading 2<small>secondary small text</small></h2>
+        <h3>heading 3<small>secondary small text</small></h3>
+        <h4>heading 4<small>secondary small text</small></h4>
+        <h5>heading 5<small>secondary small text</small></h5>
+        <h6>heading 6<small>secondary small text</small></h6>
+        <p class="bg-secondary text-white">this is bg-secondary and text-white</p>
+        <p>hover over the links below</p>
+        <a href="#" class="text-success">success link</a>
+        <a href="#" class="text-warning">warning link</a>
+    </div>
+    <div class="container">
+        <table class=" table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Family</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mitra</td>
+                    <td>Khorshidi</td>
+                    <td>Shiraz</td>
+                </tr>
+                <tr>
+                    <td>Roya</td>
+                    <td>Doryani</td>
+                    <td>Gahrom</td>
+                </tr>
+                <tr>
+                    <td>Mona</td>
+                    <td>Bahrami</td>
+                    <td>Berlin</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="  table table-bordered table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Family</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>Mitra</td>
+                    <td>Khorshidi</td>
+                    <td>Shiraz</td>
+                </tr>
+                <tr>
+                    <td>Roya</td>
+                    <td>Doryani</td>
+                    <td>Gahrom</td>
+                </tr>
+                <tr>
+                    <td>Mona</td>
+                    <td>Bahrami</td>
+                    <td>Berlin</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <img src="../images/pic1.jpg" alt="picture" class="rounded float-left" width="200" height="100"/>
+        <img src="../images/pic2.jpg" alt="pic" class="img-thumbnail float-right" width="150" height="100"/>
+        <img src="../images/pic3.jpg" alt="pic" class="mx-auto d-block" width="300" height="200"/>
+        <hr/>
+        <div class="alert alert-dark alert-dismissible show fade">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Dark.</strong>this is an alert.
+        </div>
+    </div>
 </body>
 </html>

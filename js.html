@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitra</title>
+    <script src="js/javaScript1.js"></script>
+</head>
+<body>
+    <p id="demo">this is a demo</p>
+    <button type="button" onclick="demoFunction()">change</button>
+    <hr/>
+    <script>
+    document.write(4+6);
+    </script>
+    <hr/>
+    <button type="button" onclick="document.write(5+7)">try document.write on a button</button>
+    <hr/>
+    <button type="button" onclick="alert('this is an alert')">alert</button>
+    <hr/>
+    <button type="button" onclick="window.print()">print this page</button>
+    <hr/>
+    <p id="date"></p>
+    <button type="button" onclick="document.getElementById('date').innerHTML=Date()">what date is it?</button>
+    <p>or in this way:</p>
+    <button type="button" onclick="this.innerHTML=Date()">what is the date?</button>
+    <hr/>
+    <p id="qoutes"></p>
+    <script>
+        var x="when we want to use double quotes in a string we use back slash \"Mitra\".";
+        document.getElementById('qoutes').innerHTML=x;
+    </script>
+</body>
+</html>

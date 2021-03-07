@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mitra website</title>
+        <script>
+            function light(x){
+                // console.log("x=",x);
+                var pic;
+                if(x==0){
+                    pic="bulb-off.png";
+                }else{
+                    pic="bulb-on.png";
+                }
+                document.getElementById('bulb').src=pic;
+                // console.log( {"name":"mitra",age:20});
+                // console.log(window.location);
+
+            }
+        </script>
+    </head>
+    <body>
+        <h2>My first JavaScript </h2>
+        <button type="button" 
+        onclick="document.getElementById('date').innerHTML=Date()">
+        click me to see date</button>
+        <p id="date"></p>
+        
+        <img id="bulb" src="bulb-off.png" height="400" width="200"/>
+        <p>
+            <button type="button" onclick="light(1)">light on</button>
+            <button type="button" onclick="light(0)">light off</button>
+        </p>
+        <a href="D:\projects\html\style" ><p>this is a link</p></a>
+       
+    </body>
+</html>

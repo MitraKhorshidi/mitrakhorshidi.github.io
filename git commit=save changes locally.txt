@@ -1,0 +1,10 @@
+git commit=save changes locally
+git commit -am "publish to site"
+git push =save changes globaly like github site
+
+
+git add index.html =follow changes
+
+git add *.html 
+git add js/
+git add .

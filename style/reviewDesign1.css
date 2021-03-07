@@ -1,0 +1,33 @@
+body{
+   background-color:lightgrey 
+}
+.heading{
+    color: rgb(17, 17, 19);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h1.heading{
+    text-align: center;
+}
+/* table ,th ,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+#table1{
+    border: 1px solid balck;
+    border-collapse: collapse;
+    width: 100;
+    border-spacing: 10px;
+}
+#table1 th,td{
+    padding: 5px;
+    text-align: center;
+}
+#table2{
+    border: none;
+    /* border-collapse: collapse; */
+}
+#table2 th,td{
+    padding: 10 px;
+    text-align: left;
+}
