@@ -11,15 +11,19 @@
 </head>
 <body>
     <br/>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <a class="navbar-brand" href="#">
             <img src="../images/camera.jpg" alt="Mitra.Co" style="width: 50px;"/>
         </a>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
         </ul>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2 " type="text" placeholder="Search"/>
+            <button type="submit" class="btn btn-warning">search</button>
+        </form>
         <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +35,7 @@
             </ul>
         </div> -->
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 80px;">
         <ul class="nav justify-content-center">
             <li class="nav-item"><a  class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -310,6 +314,73 @@
             
         </div>
         <hr/>
+        <form action="/action_page.php" class="was-validated">
+            <div class="form-group ">
+                <lable for="email">Enter email address:</lable>
+                <input id="email" class="form-control" type="email" placeholder="enter email" required>
+                <div class="valid-feedback">valid.</div>
+                <div class="invalid-feedback">please fill out this field</div>
+            </div>
+            <div class="form-group ">
+                <lable for="pass">Enter password:</lable>
+                <input id="pass" class="form-control" type="password" placeholder="enter password" required/>
+                <div class="valid-feedback">valid.</div>
+                <div class="invalid-feedback">please fill out this field</div>
+            </div>
+            <div class="form-group form-check ">
+                <lable class="form-check-lable" for="tik">
+                <input class="form-check-input" type="checkbox" id="tik" required/>Remember me
+                    <div class="valid-feedback">valid.</div>
+                    <div class="invalid-feedback">please fill out this field</div>
+                </lable>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <hr/>
+        <form action="/action_page.php" class="needs-validation" novalidate>
+            <div class="form-group">
+                <lable for="email">Enter email address:</lable>
+                <input id="email" class="form-control" type="email" placeholder="enter email" required>
+                <div class="valid-feedback">valid.</div>
+                <div class="invalid-feedback">please fill out this field</div>
+            </div>
+            <div class="form-group">
+                <lable for="pass">Enter password:</lable>
+                <input id="pass" class="form-control" type="password" placeholder="enter password" required/>
+                <div class="valid-feedback">valid.</div>
+                <div class="invalid-feedback">please fill out this field</div>
+            </div>
+            <div class="form-group form-check">
+                <lable class="form-check-lable" for="tik">
+                <input class="form-check-input" type="checkbox" id="tik" required/>  Remember me
+                    <div class="valid-feedback">valid.</div>
+                    <div class="invalid-feedback">please fill out this field</div>  
+                </lable>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <hr/>
+        <script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+       
 
 
 
