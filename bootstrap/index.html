@@ -10,6 +10,68 @@
     <title>Mitra</title>
 </head>
 <body>
+    <br/>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <a class="navbar-brand" href="#">
+            <img src="../images/camera.jpg" alt="Mitra.Co" style="width: 50px;"/>
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+        </ul>
+        <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+            </ul>
+        </div> -->
+    </nav>
+    <div class="container-fluid">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a  class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+        </ul>
+        <p>above is simple center Nav</p>
+        <p>bellow is flex-column nav</p>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">link</a></li>
+        </ul>
+        <p>this istogglable tab nav</p>
+        <hr/>
+        <br/>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active"  data-toggle="tab" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#search">Search</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="container-fluid tab-pane active" >
+                <br/>
+                <h4>Home</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="contact"class="container-fluid tab-pane fade">
+                <br/>
+                <h4>Contact</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="search" class="container-fluid tab-pane fade" >
+                <br/>
+                <h4>Search</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <br/>
+        <hr/>
+    </div>
     <div class="container p-3 my-3 border">
         <h1>Mitra first bootstrap website</h1>
         <p>this is some text</p>
