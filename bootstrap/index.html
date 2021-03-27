@@ -608,8 +608,21 @@
                 </div>
             </div>
         </div>
-
-        
+        <p>hover to see the tooltip</p>
+        <a href="#" data-toggle="tooltip" title="tooltip text" data-placement="top">hover me</a>
+        <a href="#" data-toggle="tooltip" title="tooltip text" data-placement="right">hover me</a>
+        <script>
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+        <p>hover to see the popover</p>
+        <button class="btn btn-info" type="button" href="#" data-toggle="popover" title="popover heading" data-content="this is some text for popover" data-trigger="focus" data-placement="top">popover</button>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();
+            });
+            </script>
         
         <hr/>
         <br/>
