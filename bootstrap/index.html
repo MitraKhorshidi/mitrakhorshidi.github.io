@@ -8,6 +8,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Mitra</title>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          /* height: 100%; */
+        }
+        </style>
 </head>
 <body>
     <br/>
@@ -35,6 +42,44 @@
             </ul>
         </div> -->
     </nav>
+    <div class="container">
+        <div id="demo" class="carousel slide " data-ride="carousel" style="margin-top: 70px;">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img alt="pic" src="../images/street.jpg" width="1100" height="500"/>
+                    <div class="carousel-caption">
+                        <h3>heading</h3>
+                        <p>this is some text about pic</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="pic" src="../images/street2.jpg"  width="1100" height="500"/>
+                    <div class="carousel-caption">
+                        <h3>heading</h3>
+                        <p>this is some text about pic</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="pic" src="../images/street3.jpg"  width="1100" height="500"/>
+                    <div class="carousel-caption">
+                        <h3>heading</h3>
+                        <p>this is some text about pic</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev" >
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
     <div class="container-fluid" style="margin-top: 80px;">
         <ul class="nav justify-content-center">
             <li class="nav-item"><a  class="nav-link" href="#">Home</a></li>
@@ -490,6 +535,7 @@
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <select class="form-control">
+                    <option>Country</option>
                     <option>Iran</option>
                     <option>Unites States</option>
                     <option>Germany</option>
@@ -498,14 +544,74 @@
             </div>
             <input class="form-control" type="text" placeholder="city"/>
         </div>
+        <p>custom checkbox and input:</p>
+        <form >
+            <div class="custom-control custom-checkbox mb-3">
+                <input class="custom-control-input" type="checkbox" id="customcheck"/>
+                <label class="custom-control-label" for="customcheck">custom checkbox</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="switch" />
+                <label class="custom-control-label" for="switch">custom switch</label>
+            </div>
+        </form>
+        <hr/>
+        <form action="/action_page.php">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-cotrol-input" id="customradio" value=""/>
+                <label class="custom-control-radio" for="customradio">custom radio</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-cotrol-input" id="customradio1" value=""/>
+                <label class="custom-control-radio" for="customradio1">custom radio</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-cotrol-input" id="customradio2" value=""/>
+                <label class="custom-control-radio" for="customradio2">custom radio</label>
+            </div>
+            <select class="custom-select mb-3">
+                <option>Custom select menu</option>
+                <option>choice1</option>
+                <option>choice2</option>
+                <option>choice3</option>
+            </select>
+            <div class="custom-file mb-3">
+                <input class="custom-file-input" type="file" id="customfile"/>
+                <label class="custom-file-label" for="customfile">choose file</label>
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-warning">submit</button>
+        </form>
+        <script>
+            // Add the following code if you want the name of the file appear on select
+            $(".custom-file-input").on("change", function() {
+              var fileName = $(this).val().split("\\").pop();
+              $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+        </script>
+        <hr/>
+        <p>modal button:</p>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Modal</button>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        Modal body ... lab lab alb
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" >close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         
         
         <hr/>
-       
-
-
-
         <br/>
         <ul class="list-group list-group-horizontal">
             <a href="#" class="list-group-item list-group-item-action list-group-item-primary">first</a>
